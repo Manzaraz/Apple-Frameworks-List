@@ -19,7 +19,7 @@ struct FrameworkGridView: View {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks) { framework in
-                        FrameworkView(framework: framework)
+                        FrameworkTitleView(framework: framework)
                     }
                 }
             }
@@ -33,7 +33,7 @@ struct FrameworkGridView: View {
         .preferredColorScheme(.dark)
 }
 
-struct FrameworkView: View {
+struct FrameworkTitleView: View {
     let framework: Framework
     
     var body: some View {
