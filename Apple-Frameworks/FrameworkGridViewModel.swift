@@ -13,8 +13,7 @@ final class FrameworkGridViewModel: ObservableObject {
         didSet {
             isShowingDetailView = true
         }
-    }
-    
+    }    
     
     @Published var isShowingDetailView = false
     
